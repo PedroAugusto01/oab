@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal CPX OAB</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/icons/navBarIcon.png" alt="Ícone OAB" style="width: 50px; height: 50px;">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#procedimentos">Procedimentos</a></li>
+                <li><a href="#familia">Família</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+    </header> 
+    <main>
+        <section id="procedimentos">
+            <h1>Procedimentos do judiciário</h1>
+            
+            <div id="table-container">
+                <table id="data-table">
+                    <thead>
+                        <tr>
+                            <th>Nome do Procedimento</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- As linhas da tabela serão inseridas aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        
+        <section id="familia">
+            <h1>Família</h1>
+            
+            <div id="table-container">
+                <table id="data-table">
+                    <thead>
+                        <tr>
+                            <th>Nome da família</th>
+                            <th>Líder da família</th>
+                            <th>Data do último pagamento</th>
+                            <th>Data de vencimento</th>
+                            <th>Quantidade de dias pagos</th>
+                            <th>Vencido</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-familia">
+                        <!-- As linhas da tabela serão inseridas aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <section id="eventos">
+            <h2>Próximos Eventos</h2>
+            <div id="events-container">Carregando eventos...</div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 CPX OAB - Todos os direitos reservados</p>
+    </footer>
+    
+    <script src="js/home/home.js"></script>
+    
+</body>
+</html>

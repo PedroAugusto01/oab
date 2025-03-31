@@ -1,0 +1,157 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004080;
+    padding: 15px 20px;
+    color: white;
+    position: relative;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    background-color: #ffcc00;
+    color: #004080;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.login-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Seções */
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #004080;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #004080;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Estilos para a tabela */
+#table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+#data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#data-table thead {
+    background-color: #004080;
+    color: white;
+}
+
+#data-table th, #data-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#data-table th {
+    font-size: 16px;
+}
+
+#data-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#data-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsividade da tabela */
+@media (max-width: 768px) {
+    #data-table th, #data-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
