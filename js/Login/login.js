@@ -32,8 +32,9 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
 
     const result = await loginUser(login, senha);
     const body = result['body']
-    console.log()
-    if (result['login'] == "true") {
+    const obj = JSON.parse(body); // Converte para objeto JavaScript
+    
+    if (obj.login == "true") {
         alert("Login bem-sucedido!");
         localStorage.setItem("authenticated", "true");
         window.location.href = "changeData.html";
